@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <script src="https://kit.fontawesome.com/46ac050ef0.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{%static 'css/style1.css'%}">
+</head>
+<body>
+    <!-- NAV BAR -->
+     <nav>
+        <div class="left">
+             <a href="#">B Aditya Rao</a>
+        </div>
+        <div class="right">
+             <a href="https://github.com/aditya26rao" target="_blank">
+                <i class="fa-brands fa-github"></i>
+                <span> GitHub</span>
+             </a>
+
+             <a href="https://www.linkedin.com/in/bonthapalli-aditya-rao-3175561bb/" target="_blank">
+                <i class="fa-brands fa-linkedin"></i>
+                <span> Linkedin</span>
+             </a>
+
+             <a href="mailto:bonthapalliadityarao@gmail.com" target="_blank">
+                <i class="fa-solid fa-envelope"></i>
+                <span> Email</span>
+             </a>
+        </div>
+     </nav>
+  <main>
+    <!-- Hero Section - 1 -->
+    <section class="hero-section">
+       <div class="text">
+          <h2>Hi, I'm Aditya 👋</h2>
+          <h3>Ready to Work as a Software Engineer</h3>
+          <p>My name is Bonthapalli Aditya Rao. I have completed my Bachelor of Technology (B.Tech) in Computer Science and Engineering (CSE) from Sree Dattha Institute of Engineering and Science, Hyderabad, with a CGPA of 7.51.
+          </p>
+           </p>
+            Prior to that, I completed my Intermediate (MPC) at Sri Chaitanya Junior College, Hyderabad, securing a CGPA of 8.23.
+            I did my schooling (SSC) at Kakatiya High School, Hyderabad, where I achieved a CGPA of 8.2.</p>
+          <div class="links">
+            <a href="#skills">
+                <i class="fa-solid fa-code"></i>
+                <span>Skills</span>
+            </a>
+
+            <a href="#project">
+                <i class="fa-solid fa-diagram-project"></i>
+                <span>Projects</span>
+            </a>
+
+            <a href="#contact">
+                <i class="fa-solid fa-envelope"></i>
+                <span>Contact</span>
+            </a>
+   
+          </div>
+       </div>
+       <div class="headshot">
+        <img src="{%static 'images/dp.jpg'%}" alt="Aditya Headshot">
+       </div>
+    </section>
+    <!-- Skills Section - 2 -->
+    <section id="skills" class="skills-section">
+          <h2>Skills</h2>
+          <div class="text">
+            I have a strong technical skill set that includes HTML, CSS, JavaScript, React.js, SQL, Python, Django, Bootstrap, Git, and GitHub. With expertise in both front-end and back-end technologies, I am capable of building scalable web applications. My proficiency in version control with Git and GitHub ensures efficient collaboration and code management. I am continuously learning and enhancing my skills to stay updated with the latest industry trends.
+          </div>
+          <div class="cells">
+            <div class="cell">
+                <img src="{%static 'images/html.jpg'%}" alt="html logo">
+                <span>HTML</span>
+            </div>
+
+            <div class="cell">
+                <img src="{%static 'images/css.jpg'%}" alt="css logo">
+                <span>CSS</span>
+            </div>
+
+            <div class="cell">
+                <img src="{%static 'images/js.png'%}" alt="js logo">
+                <span>JavaScript</span>
+            </div>
+
+            <div class="cell">
+                <img src="{%static 'images/react.png'%}" alt="reactjs logo">
+                <span>React Js</span>
+            </div>
+
+            <div class="cell">
+                <img src="{%static 'images/python.jpg'%}" alt="python logo">
+                <span>Python</span>
+            </div>
+
+            <div class="cell">
+                <img src="{%static 'images/sql.png'%}" alt="sql logo">
+                <span>MySQL</span>
+            </div>
+
+            <div class="cell">
+                <img src="{%static 'images/django.png'%}" alt="django logo">
+                <span>Django</span>
+            </div>
+          </div>
+    </section>
+    <!-- Project Section - 3-->
+    <section id="project" class="project-section">
+        <h2>Projects</h2>
+        <div class="text">
+            I have worked on several projects that highlight my skills in web development. One of my key projects is AppVila, a business application built using HTML, CSS, and JavaScript. Another project is a Hotel Website, a fully responsive hotel booking platform developed with React.js, Bootstrap, and SQL, allowing users to manage reservations seamlessly. Additionally, I have created my Portfolio Website, which showcases my skills, projects, and achievements, using React.js, CSS, and GitHub for deployment. Through these projects, I have gained hands-on experience in both front-end and back-end development, and I continuously strive to enhance my skills by exploring new technologies and best practices.
+        </div>
+        <div class="cards">
+            <div class="card">
+                <h2>Appvilla Web Application</h2>
+                <p>AppVila is a business application designed to streamline operations and enhance user experience. Built using HTML, CSS, and JavaScript, it offers a responsive and user-friendly interface for managing business activities efficiently. The application focuses on providing seamless functionality, ensuring businesses can operate smoothly. With a well-structured design and interactive features, AppVila helps improve productivity and customer engagement.</p>
+            </div>
+            <div class="card">
+                <h2>Hotel Web Application</h2>
+                <p>The Hotel Website is a fully responsive booking platform designed to provide a seamless user experience. Built using React.js, Bootstrap, and SQL, it allows users to browse rooms, check availability, and make reservations effortlessly. The website features an intuitive UI, secure data handling, and a dynamic booking system. This project enhances my expertise in front-end and back-end integration, ensuring a smooth and efficient hotel management system.</p>
+            </div>
+            <div class="card">
+                <h2>Personal Portfolio</h2>
+                <p>My portfolio website is a showcase of my skills, projects, and achievements as a developer. Built using React.js, CSS, and GitHub, it features a clean and responsive design for an optimal user experience. It highlights my expertise in front-end and back-end technologies, along with my past work. This website serves as a digital resume, demonstrating my abilities and continuous learning in web development.</p>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Section - 4 -->
+    <section id="contact" class="contact-section">
+          <h2>Contact</h2>
+        <div class="group">
+            <div class="text">
+                <h4>Mostly you can mail to <a href="mailto:bonthapalliadityarao@gmail.com">Click here to Mail me</a></h4>
+                Looking for a professional and responsive website? I specialize in developing high-quality websites tailored to your needs, using modern technologies like HTML, CSS, JavaScript, React.js, Django, and more. Whether it's a business site, portfolio, or an advanced web application, I can bring your ideas to life. Feel free to contact me for any website development requirements! 🚀
+            </div>
+            <form action="{% url 'success'%}" method="POST">
+                {% csrf_token %}
+                <label for="name">Name</label>
+                <input type="text" id="name">
+
+                <label for="email">Mail</label>
+                <input type="email" id="email">
+
+                <label for="cmt">Comment</label>
+                <textarea id="cmt" cols="30" rows="10"></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+            
+        </div>
+    </section>
+  </main>
+  <!-- Section 4 Footer Section -->
+  <footer id="footer" class="footer-section">
+    <div class="footer">
+        Copyrights &copy; 2025
+    </div>
+  </footer>
+</body>
+</html>

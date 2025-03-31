@@ -1,0 +1,398 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0 auto;
+}
+/*Nav Bar*/
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding:0 50px;
+    align-items: center;
+    height: 80px;
+}
+nav .left a{
+    color: black;
+    font-weight: 600;
+    font-size: 22px;
+    text-decoration: none;
+}
+nav .right a{
+    color: black;
+     margin:0 10px;
+     text-decoration: none;
+     transition: all 0.4s ease-in-out;
+}
+nav .right a:hover{
+    background-color: black;
+    color:white;
+    padding: 5px 15px;
+    border-radius: 5px;
+    border: none;
+}
+nav .right a:last-child{
+    color: white;
+    background-color: black;
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+nav .left a span{
+    margin-left:5px;
+}
+/*Hero Section*/
+.hero-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0 50px;
+    margin: 50px 0;
+    gap:40px;
+    margin-bottom: 100px;
+}
+.hero-section .text{
+    flex: 5;
+}
+.hero-section .text h2{
+    font-size: 45px;
+}
+.hero-section .text .links{
+    margin-top: 25px;
+}
+.hero-section .text .links a{
+    display: inline-block;
+    padding: 5px 10px;
+    border: 2px solid blue;
+    border-radius: 5px;
+    text-decoration: none;
+    color: blue;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    transition: all .1s ease;
+    transition: all 0.2s ease;
+}
+.hero-section .text .links a:hover{
+    border: 2px solid black;
+    color:black;
+    transform: scale(1.1);
+    box-shadow: 2px 2px 5px rgba(0,0, 0, 0.3);
+}
+.hero-section .headshot{
+    flex:2;
+    display: flex;
+    justify-content: right;
+}
+.hero-section .headshot img{
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+}
+
+/*Section 2 Skills*/
+.skills-section{
+    padding: 0 50px;
+    margin: 30px 0;
+}
+.skills-section h2{
+    text-align: center;
+    font-size:35px;
+}
+.skills-section .text{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.skills-section .cells {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.skills-section .cells .cell{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    padding: 10px 20px;
+    border: 1.5px solid rgb(71, 70, 70);
+    border-radius: 5px;
+    margin:10px;
+    gap:8px;
+    mix-blend-mode: multiply;
+    transition: all 0.2s ease;
+}
+.skills-section .cell:hover{
+    transform: scale(1.1);
+    box-shadow: 2px 2px 5px rgba(0,0, 0, 0.3);
+    mix-blend-mode: multiply;
+}
+.skills-section .cells .cell img{
+    width: 40px;
+    height: 30px;
+    object-fit: contain;
+    border-radius: 2px;
+    mix-blend-mode: multiply;
+
+}
+.skills-section .cells .cell span{
+    font-size: 18px;
+   
+}
+
+/*Section 2 Project */
+
+.project-section{
+    padding:0 50px;
+    margin:70px 0;
+}
+.project-section h2{
+    text-align: center;
+    font-size:35px;
+}
+.project-section .text{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.project-section .cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.project-section .card{
+    border: 2px solid gray;
+    border-radius:4px ;
+    width: 400px;
+    height: 330px;
+    overflow:hidden;
+    padding: 20px 25px;
+    margin: 0 20px;
+    transition: all 0.4s ease;
+}
+.project-section .card h2{
+    font-size: 26px;
+}
+.project-section .card p{
+    font-size: 15px;
+}
+.project-section .card:hover{
+    box-shadow: 2px 2px 5px rgba(0,0, 0, 0.3);
+    transform: scale(1.1);
+}
+
+/*Section 3 : Contact Section*/
+.contact-section {
+    padding: 0 50px;
+    margin-bottom: 100px;
+}
+.contact-section h2{
+    font-size: 35px;
+}
+.contact-section .group{
+    display: flex;
+    gap: 50px;
+}
+.contact-section .group .text{
+    flex:3;
+    margin-top: 20px;
+}
+.contact-section .group form{
+    flex:3;
+    display: flex;
+    flex-direction: column;
+}
+.contact-section .group form input, .contact-section .group form textarea{
+    font-family: 'Poppins',sans-serif;
+    border: 2px solid blue;
+    background-color: transparent;
+    padding: 10px;
+    margin-bottom: 3px;
+    outline: none;
+    border-radius:4px;
+    resize: none;
+}
+.contact-section .group form button{
+    font-size: 16px;
+    font-family: sans-serif;
+    color: #fff;
+    background-color: blue;
+    border-radius: 4px;
+    border: none;
+    height: 50px;
+    cursor: pointer; 
+    transition: .1s; 
+}
+.contact-section .group form button:hover{
+    filter:brightness(0.9);
+}
+/*Section 4 Footer Section*/
+.footer-section{
+    text-align: center;
+}
+.footer-section .footer{
+    background-color: gray;
+    line-height: 50px;
+    height: 50px;
+}
+@media (min-width:999px) and (max-width:1449px){
+        /*Section 2 : Project Section*/
+        .project-section .cards{
+            display: flex;
+        flex-direction: column;
+        padding-bottom: 10px;
+        }
+        .project-section .cards .card{
+            margin: 12px 0px;
+            padding: 10px 15px;
+    
+        }
+        .project-section .card:hover{
+            transform: none;
+            box-shadow: 3px 3px 6px rgba(0,0, 0, 0.5);
+            transform: scale(1.1);
+            margin:25px 0;
+        }
+        .project-section .cards h2{
+            font-size: 25px;
+        }
+        .project-section .cards p{
+            font-size: 16px;
+        }
+}
+
+@media (min-width:576px) and (max-width:999px) {
+    /*Section 2 : Project Section*/
+    .project-section .cards{
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 10px;
+    }
+    .project-section .cards .card{
+        padding: 10px 15px;
+        margin: 20px 0px;
+        width: 350px;
+    }
+    .project-section .card:hover{
+        transform: none;
+        box-shadow: 3px 3px 6px rgba(0,0, 0, 0.5);
+        transform: scale(1.1);
+        margin: 20px 0;
+    }
+    .project-section .cards h2{
+        font-size: 22px;
+    }
+    .project-section .cards p{
+        font-size: 17x;
+    }
+}
+
+@media (min-width:399px) and (max-width:576px){
+    /*Section 2 : Project Section*/
+    .project-section .cards{
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 8px;
+      padding: 0 25px;
+    }
+    .project-section .cards .card{
+        padding: 10px 12px;
+        margin: 15px 0px;
+        width: 350px;
+        height: 300px;
+    }
+    .project-section .cards h2{
+        font-size: 18px;
+    }
+    .project-section .cards p{
+        font-size: 14px;
+    }
+    .project-section .card:hover{
+        transform: none;
+        box-shadow: 3px 3px 6px rgba(0,0, 0, 0.5);
+        transform: scale(1.1);
+        margin: 25px 0;
+    }
+}
+@media (max-width:399px){
+    /*Section 2 : Project Section*/
+    .project-section .cards{
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 8px;
+      padding: 0 25px;
+    }
+    .project-section .cards .card{
+        padding: 12px 12px;
+        margin: 15px 0px;
+        width: 250px;
+        height: 280px;
+    }
+    .project-section .cards h2{
+        font-size: 17px;
+    }
+    .project-section .cards p{
+        font-size: 14px;
+    }
+    .project-section .card:hover{
+        transform: none;
+        box-shadow: 3px 3px 6px rgba(0,0, 0, 0.5);
+        transform: scale(1.1);
+        margin: 20px 0;
+    }
+}
+@media (max-width:850px){
+    /*Section 1 : Hero Section */
+    .hero-section .text h2{
+        font-size: 35px;
+    }
+}
+@media (max-width:740px){
+    /*Section 1 :- Hero Section*/
+    .hero-section{
+        flex-direction: column-reverse;
+    }
+    .hero-section .headshot img{
+        width: 200px;
+    }
+    /*Section 3 : Contact Section*/
+    .contact-section .group{
+        flex-direction: column;
+    }
+}
+@media (max-width:600px){
+    /*Nav Bar*/
+    nav{
+        padding:0 20px;
+    }
+    nav .right a{
+        font-size: 22px;
+    }
+    nav .right a:last-child{
+        color:black;
+        background-color: transparent;
+        padding:0;
+    }
+    nav .right a span{
+        display: none;
+    }
+    /*Section 1 Hero Section*/
+    .hero-section {
+        padding: 0 20px;    
+    }
+    .hero-section .text h2{
+        font-size: 30px;
+    }
+    /*Section 2 Project Section*/
+     
+    /*Section 3 : Contact Section*/
+        .contact-section {
+            padding: 0 30px;
+        }
+}
